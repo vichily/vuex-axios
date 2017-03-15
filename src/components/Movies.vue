@@ -1,17 +1,18 @@
 <template>
-  <div class="hello">
-  <p>{{msg}}</p>
-    <!--
+  <div class="movies">
+    
     <div v-for="item in list.aaa" >
+
+    <mu-paper class="demo-paper" :zDepth="2">
+
       <a :href="item.url" >
         <p>{{item.title}}</p>
         <img :src="item.thumbnail_pic_s" >
       </a>
+
+    </mu-paper>
     </div>
-    -->
-
-
-
+    
   </div>
 </template>
 
@@ -20,7 +21,7 @@ import { Swipe, SwipeItem } from 'mint-ui';
 export default {
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'mous'
     }
   },
   created (){

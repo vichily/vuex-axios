@@ -1,0 +1,33 @@
+body{
+    background: #eee;
+    .topbar{
+        .mu-appbar{
+            height: 40px;
+            overflow: hidden;
+            .mu-appbar-title{
+                font-size: 16px;
+                line-height: 42px;
+                height: 40px;
+            }
+        }
+    }
+    .movies{
+        .mu-paper{
+            padding: 10px;
+            img{
+                width: 100%;
+            }
+            p{
+                color: #666;
+                margin-top: 2px;
+            }
+        }
+    }
+    .nav2{
+        position:fixed;
+        width: 100%;
+        bottom: 0px;
+        box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
+        z-index: 999999999;
+    }
+}

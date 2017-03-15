@@ -20,7 +20,7 @@ import { Swipe, SwipeItem } from 'mint-ui';
 export default {
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Pictures'
     }
   },
   created (){
