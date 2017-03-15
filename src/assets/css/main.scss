@@ -1,8 +1,10 @@
-body{
+#app{
+    max-width: 420px;
+    margin: 0 auto;
     background: #eee;
     .topbar{
         .mu-appbar{
-            height: 40px;
+            height: 45px;
             overflow: hidden;
             .mu-appbar-title{
                 font-size: 16px;
@@ -26,8 +28,20 @@ body{
     .nav2{
         position:fixed;
         width: 100%;
+        max-width: 420px;
         bottom: 0px;
         box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
         z-index: 999999999;
+    }
+    .pictures{
+        background: #fff;
+        .mu-list{
+            .mu-item-wrapper{
+                border-bottom:1px solid #eee; 
+            }
+        }
+        .mu-divider{
+            display: none;
+        }
     }
 }

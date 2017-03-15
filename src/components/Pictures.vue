@@ -1,42 +1,28 @@
 <template>
-  <div class="hello">
-  <p>{{msg}}</p>
-    <!--
-    <div v-for="item in list.aaa" >
-      <a :href="item.url" >
-        <p>{{item.title}}</p>
-        <img :src="item.thumbnail_pic_s" >
-      </a>
-    </div>
-    -->
+  <div class="pictures">
 
-
+      <mu-list>
+        <mu-list-item title="个人中心">
+          <mu-icon slot="left" value="perm_identity"/>
+        </mu-list-item>
+        <mu-list-item title="收藏">
+          <mu-icon slot="left" value="grade"/>
+        </mu-list-item>
+        <mu-list-item title="发表">
+          <mu-icon slot="left" value="send"/>
+        </mu-list-item>
+        <mu-list-item title="邮件">
+          <mu-icon slot="left" value="drafts"/>
+        </mu-list-item>
+      </mu-list>
+      <mu-divider />
 
   </div>
 </template>
 
 <script>
-import { Swipe, SwipeItem } from 'mint-ui';
 export default {
-  data () {
-    return {
-      msg: 'Pictures'
-    }
-  },
-  created (){
-    this.$store.dispatch('getJock')
-  },
-  computed:{
-    list(){
-      return {
-        aaa: this.$store.state.hello.list
-      }
-    }
-  },
-  component:{
-    Swipe,
-    SwipeItem
-  }
+
 }
 </script>
 
