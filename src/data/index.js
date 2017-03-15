@@ -42,7 +42,6 @@ export default {
             }
         })
         .then(function(data){
-            console.log(data.data.data[0])
             cb(data.data.data)
         })
 
