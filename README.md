@@ -1,6 +1,6 @@
 # vue练习，一个看笑话的webapp
 
-![](https://github.com/vichily/vuex-axios/blob/master/img/1.png])
+![](https://github.com/vichily/vuex-axios/blob/master/img/1.png)
 ![](https://github.com/vichily/vuex-axios/blob/master/img/2.png)
 ![](https://github.com/vichily/vuex-axios/blob/master/img/3.png)
 ![](https://github.com/vichily/vuex-axios/blob/master/img/4.png)
