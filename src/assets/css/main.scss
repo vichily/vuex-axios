@@ -1,27 +1,36 @@
 #app{
     max-width: 420px;
     margin: 0 auto;
-    background: #eee;
+    background: #fff;
     .topbar{
         .mu-appbar{
-            height: 45px;
+            height: 48px;
             overflow: hidden;
             .mu-appbar-title{
                 font-size: 16px;
-                line-height: 42px;
-                height: 40px;
+                line-height: 48px;
+                height: 48px;
+            }
+            .left i.mu-icon{
+                font-size: 35px;
+            }
+            .material-icons{
+                line-height: 25px;
+                
             }
         }
     }
-    .movies{
+    .news,.movies{
+        padding: 10px;
         .mu-paper{
-            padding: 10px;
+            margin-bottom: 14px;
             img{
                 width: 100%;
             }
             p{
                 color: #666;
-                margin-top: 2px;
+                margin: 0px;
+                padding: 10px;
             }
         }
     }
@@ -44,4 +53,5 @@
             display: none;
         }
     }
+
 }

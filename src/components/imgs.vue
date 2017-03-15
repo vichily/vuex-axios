@@ -1,18 +1,16 @@
 <template>
-  <div class="movies">
-    
+  <div class="news">
+ 
     <div v-for="item in list.aaa" >
 
     <mu-paper class="demo-paper" :zDepth="2">
 
-      <a :href="item.url" >
-        <img :src="item.thumbnail_pic_s" >
-        <p>{{item.title}}</p>
-      </a>
-
+        <p>{{item.content}}</p>
+        <img :src="item.url" class="imgs">
+    
     </mu-paper>
     </div>
-    
+
   </div>
 </template>
 
@@ -21,16 +19,16 @@ import { Swipe, SwipeItem } from 'mint-ui';
 export default {
   data () {
     return {
-      msg: 'mous'
+      msg: '新闻'
     }
   },
   created (){
-    this.$store.dispatch('getJock')
+    this.$store.dispatch('getImgs')
   },
   computed:{
     list(){
       return {
-        aaa: this.$store.state.hello.list
+        aaa: this.$store.state.imgs.imgs
       }
     }
   },
