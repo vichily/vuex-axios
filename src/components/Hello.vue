@@ -1,8 +1,10 @@
 <template>
   <div class="hello">
     <div v-for="item in list.aaa" >
-      <p>{{item.content}}</p>
-      <img :src="item.url" >
+      <a :href="item.url" >
+        <p>{{item.title}}</p>
+        <img :src="item.thumbnail_pic_s" >
+      </a>
     </div>
   </div>
 </template>
