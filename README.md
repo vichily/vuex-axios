@@ -1,6 +1,11 @@
-# joke
+# vue练习，一个看笑话的webapp
 
-> A Vue.js project
+!()[https://github.com/vichily/vuex-axios/blob/master/img/1.png]
+!()[https://github.com/vichily/vuex-axios/blob/master/img/2.png]
+!()[https://github.com/vichily/vuex-axios/blob/master/img/3.png]
+!()[https://github.com/vichily/vuex-axios/blob/master/img/4.png]
+
+
 
 ## Build Setup
 
@@ -27,4 +32,3 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
