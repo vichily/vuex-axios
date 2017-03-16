@@ -53,5 +53,18 @@
             display: none;
         }
     }
+    .addJoke{
+        padding: 10px;
+        .mu-text-field{
+
+            width: 100%;
+        }
+    }
+    .jokelist{
+        .mu-icon{
+            position: absolute;
+            right: 20px;
+        }
+    }
 
 }

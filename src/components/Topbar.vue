@@ -1,6 +1,6 @@
 <template>
   <div class="topbar">
-    <mu-appbar title = "" >
+    <mu-appbar :title="text" >
         <mu-icon-button icon='keyboard_arrow_left' @click="back"  slot="left"/>
         <mu-icon-button icon='loop' @click="f5" slot="right"/>
     </mu-appbar>
@@ -19,7 +19,8 @@ export default {
         this.$router.go(-1)
       },
       f5(){
-          location.reload()
+          console.log(this.$parent.$children[2])
+        //   location.reload()
       }
   }
 }
