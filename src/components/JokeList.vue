@@ -1,17 +1,18 @@
 <template>
   <div>
     <div class="news jokelist">
- 
+        
         <div v-for="item in this.JokeList" >
-
-            <mu-paper class="demo-paper" :zDepth="2">
-                <mu-icon value="delete" @click="deletejoke(item.id)" color="#7d8188"/>
-                <p>{{item.title}}</p>
-                <p>{{item.content}}</p>
-            
-            </mu-paper>
+            <transition name="slide-fade">
+                <mu-paper class="demo-paper" :zDepth="2">
+                    <mu-icon value="delete" @click="deletejoke(item.id)" color="#7d8188"/>
+                    <p>{{item.title}}</p>
+                    <p>{{item.content}}</p>
+                
+                </mu-paper>
+            </transition>
         </div>
-
+       
     </div>
 
   </div>
@@ -46,6 +47,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style  lang="scss"> 
+<style > 
 
 </style>

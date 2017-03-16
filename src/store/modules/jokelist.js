@@ -1,5 +1,7 @@
 
+
 const state = {
+    
     JokeList:[{
         id: 1,
         title: "和i好啊",
@@ -25,12 +27,7 @@ const actions = {
 
 const mutations = {
     ADDJOKE(state,res){
-        if(state.JokeList.length>0){
-            res.id = ++state.JokeList[state.JokeList.length-1].id;
-        }else{
-            res.id = 1
-        }
-        console.log(res)
+        res.id = state.JokeList.length>0 ? ++state.JokeList[state.JokeList.length-1].id : 1
         state.JokeList.push(res)
     },
     DELJOKE(state,res){
