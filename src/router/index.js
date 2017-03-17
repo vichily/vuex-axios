@@ -5,6 +5,8 @@ import news from '@/components/page/news'
 import imgs from '@/components/page/imgs'
 import home from '@/components/page/home'
 import today from '@/components/page/today'
+import JokeList from '@/components/JokeList'
+import addJoke from '@/components/addJoke'
 
 Vue.use(Router)
 
@@ -33,6 +35,14 @@ export default new Router({
     {
       path: '/today',
       component: today
+    },
+    {
+      path: '/addJoke',
+      component: addJoke
+    },
+    {
+      path: '/JokeList',
+      component: JokeList
     }
     
   ]

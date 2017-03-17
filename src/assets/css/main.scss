@@ -79,4 +79,19 @@
             }
         }
     }
+    .jokelist{
+        .mu-paper {
+            position: relative;
+        }
+        i{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+    }
+    .addJoke{
+        .mu-text-field{
+            width: 100%;
+        }
+    }
 }
