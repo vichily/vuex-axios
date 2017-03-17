@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { MessageBox,Toast } from 'mint-ui';
+import { Toast } from 'mint-ui';
 export default {
     data(){
         return {
@@ -35,7 +35,6 @@ export default {
         }
     },
     components:{
-        MessageBox,
         Toast
     }
 }
