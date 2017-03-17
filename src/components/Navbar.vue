@@ -1,7 +1,7 @@
 <template>
   <div class="nav2">
 
-  <mu-paper style="max-width: 376px; ">
+  <mu-paper style="max-width: 420px; ">
     <mu-bottom-nav :value="bottomNav"   @change="handleChange">
       <mu-bottom-nav-item value="movies" title="笑话" icon="ondemand_video"  />
       <mu-bottom-nav-item value="music" title="新闻" icon="music_note"   />

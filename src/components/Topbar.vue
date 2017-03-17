@@ -19,8 +19,7 @@ export default {
         this.$router.go(-1)
       },
       f5(){
-          console.log(this.$parent.$children[2])
-        //   location.reload()
+        location.reload()
       }
   }
 }
