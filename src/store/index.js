@@ -5,6 +5,7 @@ import joke from './modules/joke';
 import imgs from './modules/imgs'
 import jokelist from './modules/jokelist'
 import today from './modules/today'
+import user from './modules/user'
 
 Vue.use(Vuex);
 
@@ -14,6 +15,7 @@ export default  new Vuex.Store({
         news,
         imgs,
         jokelist,
-        today
+        today,
+        user
     }
 })

@@ -8,8 +8,21 @@
         padding: 10px;
         margin-bottom: 48px;
     }
+    .login{
+        text-align: center;
+        height: 100%;
+        padding:40% 10% 0;
+        .el-input{
+            margin-bottom: 15px;
+        }
+        .el-button{
+            width: 100%;
+        }
+    }
     .topbar{
         position: fixed;
+        z-index: 99999999999;
+        left: 0px;
         top: 0px;
         width: 100%;
         max-width: 420px;
@@ -35,16 +48,15 @@
         width: 100%;
         max-width: 420px;
         bottom: 0px;
+        left: 0px;
         box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
         z-index: 999999999;
-        .mu-paper{
-            margin-bottom: 0px;
-        }
-    }
-    .mu-paper{
-        margin-bottom: 10px;
+        background: #fff;
     }
     .imgs{
+        .mu-paper{
+            margin-bottom: 10px;
+        }
         p{
             padding: 10px;
             margin: 0px;
@@ -56,6 +68,9 @@
         }
     }
     .news{
+        .mu-paper{
+            margin-bottom: 10px;
+        }
         p{
             margin: 0px;
             padding: 10px;
@@ -65,6 +80,9 @@
         }
     }
     .today{
+        .mu-paper{
+            margin-bottom: 10px;
+        }
         h3,p{
             margin: 0px;
             padding: 10px 10px 0;
@@ -92,6 +110,17 @@
     .addJoke{
         .mu-text-field{
             width: 100%;
+        }
+    }
+}
+
+
+html{
+    height: 100%;
+    body{
+        height: 100%;
+        #app{
+            height: 100%;
         }
     }
 }

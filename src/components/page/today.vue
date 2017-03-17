@@ -20,7 +20,6 @@ export default {
     },
     computed:{
         list(){
-            console.log(this.$store.state.today.list)
             return {
                 aaa: this.$store.state.today.list
             }

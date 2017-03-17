@@ -30,11 +30,6 @@ export default {
             }
         }
     },
-    events:{
-        loadTop222(){
-            console.log('666')
-        }
-    },
     methods:{
         loadTop() {
             this.$store.dispatch('getImgs')

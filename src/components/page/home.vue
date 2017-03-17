@@ -2,7 +2,7 @@
   <div class="pictures">
 
       <mu-list>
-        <mu-list-item title="个人中心" @click="linkto">
+        <mu-list-item title="个人中心">
           <mu-icon slot="left" value="perm_identity" />
         </mu-list-item>
         <mu-list-item title="已发表" @click="JokeList">
@@ -26,9 +26,6 @@ export default {
     this.$parent.$children[0]._data.text = "个人中心";
   },
   methods:{
-    linkto(){
-      this.$router.push('/home')
-    },
     addJoke(){
       this.$router.push('/addJoke')      
     },
