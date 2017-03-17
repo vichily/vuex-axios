@@ -7,15 +7,15 @@ const state = {
 
 
 const actions = {
-    getNews ({commit}) {
-        data2.getnews(function(res){
-            commit('GETNEWS',{res})
+    getDay ({commit}) {
+        data2.getday(function(res){
+            commit('GETDAY',{res})
         })
     }
 };
 
 const mutations = {
-    GETNEWS(state,{res}){
+    GETDAY(state,{res}){
         state.list = res
     }
 }

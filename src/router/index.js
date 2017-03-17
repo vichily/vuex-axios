@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Movies from '@/components/Movies'
-import Pictures from '@/components/Pictures'
-import News from '@/components/News'
-import Imgs from '@/components/imgs'
-import Home from '@/components/home'
-import addJoke from '@/components/addJoke'
-import JokeList from '@/components/JokeList'
+import joke from '@/components/page/joke'
+import news from '@/components/page/news'
+import imgs from '@/components/page/imgs'
+import home from '@/components/page/home'
+import today from '@/components/page/today'
 
 Vue.use(Router)
 
@@ -14,35 +12,27 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Movies
+      component: joke
     },
     {
-      path: '/movies',
-      component: Movies
+      path: '/joke',
+      component: joke
     },
     {
-      path: '/pictures',
-      component: Pictures
+      path: '/news',
+      component: news
     },
     {
-      path: '/music',
-      component: News
-    },
-    {
-      path: '/books',
-      component: Imgs
+      path: '/imgs',
+      component: imgs
     },
     {
       path: '/home',
-      component: Home
+      component: home
     },
     {
-      path: '/addJoke',
-      component: addJoke
-    },
-    {
-      path: '/JokeList',
-      component: JokeList
+      path: '/today',
+      component: today
     }
     
   ]

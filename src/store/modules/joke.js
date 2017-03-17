@@ -7,15 +7,15 @@ const state = {
 
 
 const actions = {
-    getJock ({commit}) {
-        data2.getdata(function(res){
-            commit('GETDATA',{res})
+    getJoke ({commit}) {
+        data2.getjoke(function(res){
+            commit('GETJOKE',{res})
         })
     }
 };
 
 const mutations = {
-    GETDATA(state,{res}){
+    GETJOKE(state,{res}){
         state.list = res
     }
 }

@@ -1,6 +1,5 @@
 <template>
-  <div class="movies">
-    
+  <div class="news">
     <div v-for="item in list.aaa" >
 
     <mu-paper class="demo-paper" :zDepth="2">
@@ -12,32 +11,22 @@
 
     </mu-paper>
     </div>
-    
   </div>
 </template>
 
 <script>
-import { Swipe, SwipeItem } from 'mint-ui';
 export default {
-  data () {
-    return {
-      msg: 'mous'
+    created (){
+        this.$parent.$children[0]._data.text = "新闻";
+        this.$store.dispatch('getNews')
+    },
+    computed:{
+        list(){
+        return {
+            aaa: this.$store.state.news.list
+        }
+        }
     }
-  },
-  created (){
-    this.$store.dispatch('getJock')
-  },
-  computed:{
-    list(){
-      return {
-        aaa: this.$store.state.hello.list
-      }
-    }
-  },
-  component:{
-    Swipe,
-    SwipeItem
-  }
 }
 </script>
 

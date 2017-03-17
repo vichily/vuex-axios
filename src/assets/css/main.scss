@@ -2,7 +2,17 @@
     max-width: 420px;
     margin: 0 auto;
     background: #fff;
+    .main{
+        width: 100%;
+        margin-top: 48px;
+        padding: 10px;
+        margin-bottom: 48px;
+    }
     .topbar{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        max-width: 420px;
         .mu-appbar{
             height: 48px;
             overflow: hidden;
@@ -20,20 +30,6 @@
             }
         }
     }
-    .news,.movies{
-        padding: 10px;
-        .mu-paper{
-            margin-bottom: 14px;
-            img{
-                width: 100%;
-            }
-            p{
-                color: #666;
-                margin: 0px;
-                padding: 10px;
-            }
-        }
-    }
     .nav2{
         position:fixed;
         width: 100%;
@@ -41,42 +37,46 @@
         bottom: 0px;
         box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
         z-index: 999999999;
-    }
-    .pictures{
-        background: #fff;
-        .mu-list{
-            .mu-item-wrapper{
-                border-bottom:1px solid #eee; 
-            }
-        }
-        .mu-divider{
-            display: none;
+        .mu-paper{
+            margin-bottom: 0px;
         }
     }
-    .addJoke{
-        padding: 10px;
-        .mu-text-field{
-
+    .mu-paper{
+        margin-bottom: 10px;
+    }
+    .imgs{
+        p{
+            padding: 10px;
+            margin: 0px;
+            color: #666;
+        }
+        img{
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+    .news{
+        p{
+            margin: 0px;
+            padding: 10px;
+        }
+        img{
             width: 100%;
         }
     }
-    .jokelist{
-        .mu-icon{
-            position: absolute;
-            right: 20px;
+    .today{
+        h3,p{
+            margin: 0px;
+            padding: 10px 10px 0;
+        }
+        .imgbox{
+            text-align: center;
+            margin-top: 10px;
+            img{
+                vertical-align: text-top;
+                margin-bottom: 10px;
+                max-width: 100%;
+            }
         }
     }
-
-}
-/* 可以设置不同的进入和离开动画 */
-/* 设置持续时间和动画函数 */
-.slide-fade-enter-active {
-  transition: all .3s ease;
-}
-.slide-fade-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-fade-enter, .slide-fade-leave-active {
-  transform: translateX(10px);
-  opacity: 0;
 }

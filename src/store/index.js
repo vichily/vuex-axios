@@ -1,17 +1,19 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import hello from './modules/hello';
 import news from './modules/news';
+import joke from './modules/joke';
 import imgs from './modules/imgs'
 import jokelist from './modules/jokelist'
+import today from './modules/today'
 
 Vue.use(Vuex);
 
 export default  new Vuex.Store({
     modules:{
-        hello,
+        joke,
         news,
         imgs,
-        jokelist
+        jokelist,
+        today
     }
 })
